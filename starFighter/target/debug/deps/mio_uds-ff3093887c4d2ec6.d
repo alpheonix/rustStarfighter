@@ -1,0 +1,11 @@
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/mio_uds-ff3093887c4d2ec6.rmeta: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/datagram.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/listener.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/socket.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/stream.rs
+
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/libmio_uds-ff3093887c4d2ec6.rlib: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/datagram.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/listener.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/socket.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/stream.rs
+
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/mio_uds-ff3093887c4d2ec6.d: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/datagram.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/listener.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/socket.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/stream.rs
+
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/lib.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/datagram.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/listener.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/socket.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mio-uds-0.6.7/src/stream.rs:

@@ -1,0 +1,10 @@
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/mime_guess-a21d5d886c502935.rmeta: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/impl_bin_search.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/mime_types.rs /Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/build/mime_guess-3dcd68f7609d89fa/out/mime_types_generated.rs
+
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/libmime_guess-a21d5d886c502935.rlib: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/impl_bin_search.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/mime_types.rs /Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/build/mime_guess-3dcd68f7609d89fa/out/mime_types_generated.rs
+
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/deps/mime_guess-a21d5d886c502935.d: /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/lib.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/impl_bin_search.rs /Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/mime_types.rs /Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/build/mime_guess-3dcd68f7609d89fa/out/mime_types_generated.rs
+
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/lib.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/impl_bin_search.rs:
+/Users/arthurblanc/.cargo/registry/src/github.com-1ecc6299db9ec823/mime_guess-2.0.1/src/mime_types.rs:
+/Users/arthurblanc/Desktop/rustStarfighter/starFighter/target/debug/build/mime_guess-3dcd68f7609d89fa/out/mime_types_generated.rs:
