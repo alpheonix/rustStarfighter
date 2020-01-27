@@ -4,7 +4,8 @@ pub struct Spaceship {
     pub speed: i64,
     pub hp: i64,
     pub damage: i64,
-    pub adventage: bool
+    pub adventage: bool,
+    pub miss : i64
 
 
 }
@@ -17,6 +18,7 @@ pub fn create_spaceship_template() -> Spaceship {
     speed: 100,
     hp: 92000,
     damage: 24000,
-    adventage: false
+    adventage: false,
+    miss: 100
     }
 }
