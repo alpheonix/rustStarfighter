@@ -1,6 +1,4 @@
 mod spaceship; 
-use std::collections::HashMap;
-
 extern crate rand;
 use rand::Rng;
 
@@ -10,7 +8,7 @@ use rand::Rng;
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let resp = reqwest::get("https://mysterious-fortress-67328.herokuapp.com/spaceship/getAll")
         .await?
-        .json::<HashMap<String,serde_json::Value>>()
+        .json::<serde_json::Value>()
         .await?;
     let mut rng = rand::thread_rng();
     let rand1 = rng.gen_range(0, 31);
@@ -31,7 +29,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             damage: resp["spaceships"][rand2]["damage"].as_i64().unwrap(),
                                             adventage: false,
                                             miss: 100};
-
     println!("PIOU PIOU PIOU");
     let coef:i64;
     if x_wing.speed<executor.speed {
