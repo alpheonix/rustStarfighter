@@ -1,20 +1,9 @@
 mod spaceship; 
-use spaceship::create_spaceship_template;
 use std::collections::HashMap;
-use std::any::Any;
-use serde_json::Map;
-use serde_json::Number;
+
 extern crate rand;
 use rand::Rng;
 
-enum Value {
-    Null,
-    Bool(bool),
-    i64,
-    String,
-    Array(Vec<Value>),
-    Object(Map<String, Value>),
-}
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -45,7 +34,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("{}",executor.name);
     println!("PIOU PIOU PIOU");
     let coef:i64;
-    if(x_wing.speed<executor.speed){
+    if x_wing.speed<executor.speed {
         executor.adventage = true;
         coef = executor.speed/x_wing.speed;
     }else{
@@ -70,17 +59,17 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("{ }",x_wing.miss);
     println!("{ }",executor.miss);
     let mut temp = coef;
-    while(x_wing.hp>0 && executor.hp>0){
-        let rand = rng.gen_range(0, 100);
-        if(temp>=1){
-            if(x_wing.adventage){
-                if(x_wing.miss > rng.gen_range(0, 100) ){
+    while x_wing.hp>0 && executor.hp>0 {
+        
+        if temp>=1 {
+            if x_wing.adventage {
+                if x_wing.miss > rng.gen_range(0, 100) {
                     executor.hp -= x_wing.damage;
                 }
                 temp -= 1;
                 
             }else{
-                if(executor.miss > rng.gen_range(0, 100) ){
+                if executor.miss > rng.gen_range(0, 100){
                 x_wing.hp -= executor.damage;
                 }
                 temp -= 1;
@@ -88,13 +77,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         }else{
             
-            if(x_wing.adventage){
-                if(executor.miss > rng.gen_range(0, 100) ){
+            if x_wing.adventage{
+                if executor.miss > rng.gen_range(0, 100){
                 x_wing.hp -= executor.damage;
                 }
                 temp +=coef;
             }else{
-                if(x_wing.miss > rng.gen_range(0, 100) ){
+                if x_wing.miss > rng.gen_range(0, 100){
                     executor.hp -= x_wing.damage;
                     
                 }
