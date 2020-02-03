@@ -3,6 +3,14 @@ extern crate rand;
 use rand::Rng;
 
 
+/*enum Value {
+    Null,
+    Bool(bool),
+    Number(Number),
+    String(String),
+    Array(Vec<Value>),
+    Object(Map<String, Value>),
+}*/
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
