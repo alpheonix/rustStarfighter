@@ -5,6 +5,7 @@ extern crate rand;
 use rand::Rng;
 
 
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let resp = reqwest::get("https://mysterious-fortress-67328.herokuapp.com/spaceship/getAll")
@@ -15,7 +16,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let rand1 = rng.gen_range(0, 31);
     let rand2 = rng.gen_range(0, 31);
     
-   println!("Hello Benj!");
     let mut x_wing = spaceship::Spaceship{_id:resp["spaceships"][rand1]["_id"].as_str().unwrap().to_string(),
                                             name:resp["spaceships"][rand1]["name"].as_str().unwrap().to_string(),
                                             speed: resp["spaceships"][rand1]["speed"].as_i64().unwrap(),
@@ -23,7 +23,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             damage: resp["spaceships"][rand1]["damage"].as_i64().unwrap(),
                                             adventage: false,
                                             miss: 100};
-    println!("{}",x_wing.name);
+
    let mut executor = spaceship::Spaceship{_id:resp["spaceships"][rand2]["_id"].as_str().unwrap().to_string(),
                                             name:resp["spaceships"][rand2]["name"].as_str().unwrap().to_string(),
                                             speed: resp["spaceships"][rand2]["speed"].as_i64().unwrap(),
@@ -31,7 +31,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             damage: resp["spaceships"][rand2]["damage"].as_i64().unwrap(),
                                             adventage: false,
                                             miss: 100};
-    println!("{}",executor.name);
+
     println!("PIOU PIOU PIOU");
     let coef:i64;
     if x_wing.speed<executor.speed {
