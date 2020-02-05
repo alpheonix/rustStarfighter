@@ -21,6 +21,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut rng = rand::thread_rng();
     let rand1 = rng.gen_range(0, 31);
     let rand2 = rng.gen_range(0, 31);
+
+    let obj = resp.as_object().unwrap();
     
     let mut x_wing = spaceship::Spaceship{_id:resp["spaceships"][rand1]["_id"].as_str().unwrap().to_string(),
                                             name:resp["spaceships"][rand1]["name"].as_str().unwrap().to_string(),
@@ -38,6 +40,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                             adventage: false,
                                             miss: 100};
     println!("PIOU PIOU PIOU");
+    println!("{:?}",resp.as_object().unwrap());
     let coef:i64;
     if x_wing.speed<executor.speed {
         executor.adventage = true;
@@ -51,18 +54,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         0..=50 => x_wing.miss = 100,
         51..=100 => x_wing.miss = 80,
         101..=150 => x_wing.miss = 60,
-        _ => println!("yo"),
+        _ => return,
     }
 
     match resp["spaceships"][rand2]["speed"].as_u64().unwrap() {
         0..=50 => executor.miss = 100,
         51..=100 => executor.miss = 80,
         101..=150 => executor.miss = 60,
-        _ => println!("yo"),
+        _ => return,
     }
 
-    println!("{ }",x_wing.miss);
-    println!("{ }",executor.miss);
     let mut temp = coef;
     while x_wing.hp>0 && executor.hp>0 {
         
